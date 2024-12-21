@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+   Basketball Team
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" >
+  <body>
+    <h1 class="title">Team stats</h1>
+    <main>
+      <div class="team-stats">
+        <p>Team: <span id="team"></span></p>
+        <p>Sport: <span id="sport"></span></p>
+        <p>Year: <span id="year"></span></p>
+        <p>Head coach: <span id="head-coach"></span></p>
+      </div>
+      <label class="options-label" for="players">Filter Teammates:</label>
+      <select name="players" id="players">
+        <option value="all">All Players</option>
+        <option value="nickname">Nicknames</option>
+        <option value="pointguard">Position pointguard</option>
+        <option value="shooter">Position shooter</option>
+        <option value="defender">Position smallforward</option>
+        <option value="bigman">Position bigman</option>
+      </select>
+      <div class="cards" id="player-cards">
+        <div class="player-card">
+          <h2>Vincent Omondi</h2>
+          <p>Position: pointguard</p>
+          <p>Number: 8</p>
+          <p>Nickname: N/A</p>
+          
+        </div>
+        <div class="player-card">
+          <h2>Billy Brandon</h2>
+          <p>Position: pointguard</p>
+          <p>Number: 10</p>
+          <p>Nickname: N/A</p>
+        </div>
+        <div class="player-card">
+          <h2>James Oduor</h2>
+          <p>Position: pointguard</p>
+          <p>Number: 6</p>
+          <p>Nickname: Lebron</p>
+        </div>
+        <div class="player-card">
+          <h2>Cosmas Odipo</h2>
+          <p>Position: bigman</p>
+          <p>Number: 5</p>
+          <p>Nickname: Nyapola</p>
+        </div>
+        <div class="player-card">
+          <h2>Moses Ochieng</h2>
+          <p>Position: pointguard</p>
+          <p>Number: 7</p>
+          <p>Nickname: Ochibo</p>
+        </div>
+        <div class="player-card">
+          <h2>Kevin Omondi</h2>
+          <p>Position: bigman</p>
+          <p>Number: 4</p>
+          <p>Nickname: Kevimbi</p>
+        </div>
+        <div class="player-card">
+          <h2>Reagan Ochieng</h2>
+          <p>Position: bigman</p>
+          <p>Number: 11</p>
+          <p>Nickname: Origi</p>
+        </div>
+        <div class="player-card">
+          <h2>Starnley Barezi</h2>
+          <p>Position: smallforward</p>
+          <p>Number: 14</p>
+          <p>Nickname: N/A</p>
+        </div>
+        <div class="player-card">
+          <h2>Byron Brandon</h2>
+          <p>Position: shooter</p>
+          <p>Number: 13</p>
+          <p>Nickname: Baroda</p>
+        </div>
+        <div class="player-card">
+          <h2>(Captain) Derrick Otieno</h2>
+          <p>Position: shooter</p>
+          <p>Number: 9</p>
+          <p>Nickname: Derro</p>
+        </div>
+      </div>
+      <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="bbbp"><p class="Number"><i class="fa-solid fa-phone"></i> 0702178973</p></div>
+           <div class="bbbs"> <p class="Number"><i class="fa-brands fa-tiktok"></i> hoops_for_kids_korogocho</p></div>
+            <div class="bbb"> <p class="Number"> <a href="https://www.tiktok.com/@hoops_for_kids_korogocho"><i class="fa-brands fa-youtube" ></i></a>hoops for kids korogocho</p></div>
+            <form action="#" method="POST" class="contact-form" name="submit-to-google-sheet">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="Subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="Message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    </main>
+     <footer>&copy; James Oduor</footer>
+    <script src="./script.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw6HFYW-V9GIsM4LPkhGt0W3wH5B_0111WkeVKZEfhX_CQF2clvsJaLGLYJVA94cMaN9A/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+  
+</html>
