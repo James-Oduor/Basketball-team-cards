@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates how to use modern JavaScript methods while building an interactive web application that showcases a basketball team's players. Users can view detailed player information and filter the displayed players by specific criteria such as position or nickname.
+This project demonstrates how to use modern JavaScript methods while building an interactive web application that showcases a basketball team's players. Users can view detailed player information and filter the displayed players by specific criteria such as position or nickname. This is a hyperlink to this project https://hoopsforkidsteam.netlify.app/
 
 ![image](https://github.com/user-attachments/assets/86f58f6c-8123-492f-acbb-552169b3e02a)
 
