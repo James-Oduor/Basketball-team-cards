@@ -56,6 +56,30 @@ footer {
   width: 300px;
   border-radius: 15px;
 }
+.styled-link {
+  display: block; 
+  width: fit-content; 
+  margin: 10px auto;  
+  padding: 12px 20px;
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.styled-link:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: white;
+}
+
+.styled-link:active {
+  background-color: #004494;
+  transform: scale(0.95);
+}
 
 @media (max-width: 768px) {
   .team-stats {
@@ -71,6 +95,9 @@ footer {
 .contact-section {
   padding: 50px 20px;
   text-align: center;
+}
+.contact-section:hover{
+color:#0a0a23;
 }
 
 .container {
@@ -145,3 +172,4 @@ h2 {
 .bbbp i{
   color: #0a0a23;
 }
+

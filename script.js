@@ -7,7 +7,7 @@ const playersDropdownList = document.getElementById("players");
 const myFavoriteBasketballTeam = {
   team: "Hoops For Kids",
   sport: "Basketball",
-  year: 2024,
+  year: 2025,
   headCoach: {
     coachName: "Bryan",
   },
