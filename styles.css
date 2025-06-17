@@ -148,6 +148,22 @@ footer {
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+.styled-link-2 {
+  display: inline-block;
+  background-color: #005792;
+  color: #fff;
+  text-decoration: none;
+  height: 35px;
+  width: 150px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.styled-link-2:hover {
+  background-color: #003f5c;
+  transform: scale(1.05);
+  text-decoration: none;
+}
 
 .styled-link:hover {
   background-color: #003f5c;
