@@ -20,7 +20,7 @@ const myFavoriteBasketballTeam = {
       nickname: null,
     },
     {
-      name: "Billy Brandon",
+      name: "George Ashley",
       position: "pointguard",
       number: 10,
       isCaptain: false,
@@ -62,7 +62,7 @@ const myFavoriteBasketballTeam = {
       nickname: "Origi",
     },
     {
-      name: "Starnley Barezi",
+      name: "Sthandrid Barrack",
       position: "smallforward",
       number: 12,
       isCaptain: false,
