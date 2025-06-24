@@ -17,12 +17,12 @@ const myFavoriteBasketballTeam = {
       position: "pointguard",
       number: 8,
       isCaptain: false,
-      nickname: null,
+      nickname: "VinnieIrving",
     },
     {
       name: "George Ashley",
-      position: "pointguard",
-      number: 10,
+      position: "bigman",
+      number: 11,
       isCaptain: false,
       nickname: null,
     },
@@ -31,14 +31,14 @@ const myFavoriteBasketballTeam = {
       position: "pointguard",
       number: 6,
       isCaptain: false,
-      nickname: "Lebron",
+      nickname: "Jemo",
     },
     {
       name: "Cosmas Odipo",
       position: "bigman",
       number: 5,
       isCaptain: false,
-      nickname: "Nyapola",
+      nickname: "De Blocker",
     },
     {
       name: "Moses Ochieng",
@@ -52,21 +52,35 @@ const myFavoriteBasketballTeam = {
       position: "bigman",
       number: 4,
       isCaptain: false,
-      nickname: "Kevimbi",
+      nickname: "Kevo",
     },
     {
       name: "Reagan Ochieng",
       position: "bigman",
-      number: 11,
+      number: 10,
       isCaptain: false,
-      nickname: "Origi",
+      nickname: "Dancan",
     },
     {
       name: "Sthandrid Barrack",
       position: "smallforward",
       number: 12,
       isCaptain: false,
-      nickname: null,
+      nickname: "Chari Chair",
+    },
+    {
+      name: "Solomon Odhiambo",
+      position: "smallforward",
+      number: 15,
+      isCaptain: false,
+      nickname: "Solo",
+    },
+    {
+      name: "Anthony Odhiambo",
+      position: "shooter",
+      number: 8,
+      isCaptain: false,
+      nickname: "Tony",
     },
     {
       name: "Byron Brandon",
@@ -125,10 +139,11 @@ playersDropdownList.addEventListener("change", (e) => {
         players.filter((player) => player.position === "shooter")
       );
       break;
-    case " smallforward":
-      setPlayerCards(
-        players.filter((player) => player.position === " smallforward")
-      );
+    case "powerforward":
+  setPlayerCards(
+    players.filter((player) => player.position === "powerforward")
+  );
+  break;
       break;
     case "bigman":
       setPlayerCards(
